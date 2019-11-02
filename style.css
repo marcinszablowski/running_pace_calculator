@@ -1,0 +1,67 @@
+body {
+  background: #F8F9FA;
+}
+
+.target-time {
+  width: 65px;
+  margin-right: 10px;
+  text-align: center;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 2em;
+}
+
+.time-cnt {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+
+.time-info {
+  align-self: flex-end;
+  margin-right: 10px;
+  font-size: 1.5em;
+  transform: translate(-12px, -3px);
+}
+
+.seconds {
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.calc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  width: 500px;
+  margin: auto;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+button {
+  margin-top: 30px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1;
+}
+
+.goal-pace {
+  display: flex;
+  justify-content: space-around;
+}
+
+.goal-pace h4 {
+  font-size: 40px;
+}
