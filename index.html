@@ -12,37 +12,38 @@
 
 <body>
   <h1 class="title">Running Pace Calculator</h1>
+  <div class="cnt">
+    <div class="calc-container">
+      <h3>Choose distance</h3>
 
-  <div class="calc-container">
-    <h3>Choose distance</h3>
+      <div class="input-group input-group-lg dist-select">
+        <select name="distance" id="distance" class="custom-select">
+          <option value="5000">5 kilometers</option>
+          <option value="10000">10 kilometers</option>
+          <option value="21097">Halfmarathon</option>
+          <option value="42195">Marathon</option>
+        </select>
+      </div>
 
-    <div class="input-group input-group-lg dist-select">
-      <select name="distance" id="distance" class="custom-select">
-        <option value="5000">5 kilometers</option>
-        <option value="10000">10 kilometers</option>
-        <option value="21097">Halfmarathon</option>
-        <option value="42195">Marathon</option>
-      </select>
+      <h3>Enter target time</h3>
+      <!-- <input type="time" name="time" id="time" class="target-time dropdown-menu" step="2"> -->
+      <div class="input-group input-group-lg time-cnt">
+        <input type="number" name="hours" id="hours" class="target-time" min="0" max="99" value="00">
+        <span class="time-info">h</span>
+        <input type="number" name="minutes" id="minutes" class="target-time" min="0" max="59" value="00">
+        <span class="time-info">m</span>
+        <input type="number" name="seconds" id="seconds" class="target-time" min="0" max="59" value="00">
+        <span class="time-info seconds">s</span>
+      </div>
+
+      <button class="btn btn-primary calculate-btn btn-lg">Calculate</button>
+
     </div>
 
-    <h3>Enter target time</h3>
-    <!-- <input type="time" name="time" id="time" class="target-time dropdown-menu" step="2"> -->
-    <div class="input-group input-group-lg time-cnt">
-      <input type="number" name="hours" id="hours" class="target-time" min="0" max="99" value="00">
-      <span class="time-info">h</span>
-      <input type="number" name="minutes" id="minutes" class="target-time" min="0" max="59" value="00">
-      <span class="time-info">m</span>
-      <input type="number" name="seconds" id="seconds" class="target-time" min="0" max="59" value="00">
-      <span class="time-info seconds">s</span>
+    <div class="goal-pace">
+      <h4 class="pace-km">0 min 00 sec / km</h4>
+      <h4 class="pace-mile">0 min 00 sec / mile</h4>
     </div>
-
-    <button class="btn btn-primary calculate-btn btn-lg">Calculate</button>
-
-  </div>
-  
-  <div class="goal-pace">
-    <h4 class="pace-km">0 min 00 sec / km</h4>
-    <h4 class="pace-mile">0 min 00 sec / mile</h4>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
