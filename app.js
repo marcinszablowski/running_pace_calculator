@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(hoursInSeconds);
     
     function getPaceInKilometers() {
-      paceKm.innerHTML = `${Math.floor(minutesPaceInKm)} min ${Math.floor(secondsPaceInKm)} sec / km`
+      paceKm.innerHTML = `${Math.floor(minutesPaceInKm)} min ${(secondsPaceInKm >= 0 && secondsPaceInKm < 10) ? "0" : ""}${Math.floor(secondsPaceInKm)} sec / km`
     }
 
     function getPaceInMiles() {
-      paceMile.innerHTML = `${Math.floor(minutesPaceInMiles)} min ${Math.floor(secondsPaceInMiles)} sec / mile`
+      paceMile.innerHTML = `${Math.floor(minutesPaceInMiles)} min ${(secondsPaceInMiles >= 0 && secondsPaceInMiles < 10) ? "0" : ""}${Math.floor(secondsPaceInMiles)} sec / mile`
     }
 
 
